@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Digital Detox Recommender</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Digital Detox Recommender</h2>
+
+<form method="POST">
+
+<input type="number" name="screen" placeholder="Daily Screen Time (hours)" required>
+
+<input type="number" name="social" placeholder="Social Media Time (hours)" required>
+
+<input type="number" name="unlocks" placeholder="Phone Unlocks per Day" required>
+
+<button type="submit">Check Recommendation</button>
+
+</form>
+
+<h3>{{ result }}</h3>
+
+</div>
+
+</body>
+</html>
